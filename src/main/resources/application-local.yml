@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://rm-cn-ow74cxwqq0001j4o.rwlb.rds.aliyuncs.com/yu_ai_agent
+    username: my_user
+    password: LZNlzn123!
+  ai:
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        dimensions: 1536
+        distance-type: COSINE_DISTANCE
+        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+    dashscope:
+      api-key: sk-c91e2ea047c440158cd515e7dd6b481b
+
+# searchApi
+search-api:
+  api-key: bj6U2qYm9k6GcrsPuLayhVBJ
